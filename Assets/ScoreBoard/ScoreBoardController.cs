@@ -86,7 +86,7 @@ public class ScoreBoardController : MonoBehaviour {
 		lblScoresStyle.padding.left = Screen.width / 35;
 		lblScoresStyle.padding.top = Screen.width / 35;
 		lblScoresStyle.wordWrap = true;
-		lblScoresStyle.fixedWidth = 600;
+		lblScoresStyle.fixedWidth = 700;
 
 		// scores
 		GUI.Label(new Rect(Screen.width * .17f, Screen.height * .20f, 0, 0), requestedData, lblScoresStyle);
@@ -106,7 +106,7 @@ public class ScoreBoardController : MonoBehaviour {
 
 	void Start () {
 //		jsonString = File.ReadAllText (Application.dataPath  + "/Resources/Items.json");
-		Debug.Log (jsonString);
+//		Debug.Log (jsonString);
 
 		string url = "https://prisonbreakws.herokuapp.com/prisonEscape/scores";
 		WWW www = new WWW(url);
@@ -134,7 +134,7 @@ public class ScoreBoardController : MonoBehaviour {
 
 //			dynamic stuff = JsonConvert.DeserializeObject (requestedData);
 
-			Debug.Log (itemData[0][1]);
+//			Debug.Log (itemData[0][1]);
 
 		} else {
 			Debug.Log("WWW Error: "+ www.error);

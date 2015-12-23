@@ -17,11 +17,26 @@ public class GameManagerBehaviour : MonoBehaviour {
 		}
 	}
 
+	GlobalController globalData;
+
+
+
+	private string userName;
+	public string UserName {
+		get { return userName; }
+		set {
+			userName = value;
+		}
+	}
+
 	// Use this for initialization
 	void Start () {
 		Cash = 1000;
 		Wave = 0;
 		Health = 5;
+
+		globalData = GameObject.Find ("GlobalSingleton").GetComponent<GlobalController>();
+		this.userName = globalData.UserName;
 	}
 	
 	private int wave;
