@@ -33,7 +33,7 @@ I created all the art assets myself.
 All authors for audio assets are listed in the references section.
 
 The Web Service (for the score board) is located here:  
-https://prisonescapews.herokuapp.com/  
+http://prisonbreakws.herokuapp.com/
   
 The game is hosted here (altough the server is low power and takes some time to load):  
 https://prisonescapehost.herokuapp.com/
